@@ -7,7 +7,16 @@ public class DropBomb : MonoBehaviour
     [SerializeField] private Type attackers;
     [SerializeField] private GameObject bomb;
     [SerializeField] private float bombDelay;
+
     private void Start()
+    {
+        if (attackers is Type.Truck || attackers is Type.Helicopter)
+        {
+            StartCoroutine(DropBombs());
+        }
+    }
+    
+    private void OnEnable()
     {
         if (attackers is Type.Truck || attackers is Type.Helicopter)
         {
@@ -17,25 +26,15 @@ public class DropBomb : MonoBehaviour
 
     IEnumerator DropBombs()
     {
-        yield return new WaitForSeconds(bombDelay);
-        if (attackers is Type.Helicopter)
+        while (true)
         {
+            yield return new WaitForSeconds(bombDelay); 
             DropOneBombUnder();
         }
-        else
-        {
-            DropOneBombNextTo();
-        }
-        StartCoroutine(DropBombs());
     }
     
     public void DropOneBombUnder()
     {
         Instantiate(bomb, new (gameObject.transform.position.x, gameObject.transform.position.y - 0.15f, gameObject.transform.position.z), Quaternion.identity);
-    }
-
-    public void DropOneBombNextTo()
-    {
-        Instantiate(bomb, new (gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
     }
 }
