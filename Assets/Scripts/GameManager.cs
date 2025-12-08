@@ -24,6 +24,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Start()
+    {
+        foreach (GameObject avion in avionList)
+        {
+            avion.SetActive(false);
+        }
+        foreach (GameObject helico in helicopterList)
+        {
+            helico.SetActive(false);
+        }
+        avionList[0].SetActive(true);
+        helicopterList[0].SetActive(true);
+    }
+    
     public void LoseBall()
     {
         cityLife --;
@@ -51,7 +65,7 @@ public class GameManager : MonoBehaviour
         else if (tag == "Helicopter")
         {
             indiceHelicopter += 1;
-            if (indiceHelicopter > helicopterList.Length)
+            if (indiceHelicopter < helicopterList.Length)
             {
                 helicopterList[indiceHelicopter].SetActive(true);
             }
