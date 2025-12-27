@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,9 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject dieMenu;
     [SerializeField] private GameObject winMenu;
 
+    
+    [SerializeField] private TextMeshProUGUI victoryText;
+    [SerializeField] private TextMeshProUGUI looserText;
     
     public static MenuManager Instance;
     
@@ -85,6 +89,7 @@ public class MenuManager : MonoBehaviour
         if(dieMenu.activeSelf)
         {
             Time.timeScale = 0;
+            looserText.text = "La ville est tombée\nVous aviez un score de " + ScoreManager.Instance.score + " points avant de périr.";
         }
         else
         {
@@ -99,6 +104,7 @@ public class MenuManager : MonoBehaviour
         if(winMenu.activeSelf)
         {
             Time.timeScale = 0;
+            victoryText.text = "La ville est  sauvé !\nVous avez réussi à repousser l'attaque et avez récupéré " + ScoreManager.Instance.score + " points.";
         }
         else
         {
