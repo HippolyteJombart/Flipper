@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     private int indiceTruck = 0;
     
     public int cityLife = 6;
+    [SerializeField] private TextMeshProUGUI textLife;
     
     private void Awake()
     {
@@ -50,6 +52,7 @@ public class GameManager : MonoBehaviour
         else
         {
             VfxManager.Instance.CityExplosion(cityLife);
+            textLife.text = cityLife.ToString();
         }
     }
     

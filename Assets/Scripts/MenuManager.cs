@@ -34,7 +34,10 @@ public class MenuManager : MonoBehaviour
     {
         if (Input.GetKeyDown(menuKey))
         {
-            OpenClosePauseMenu();
+            if(pauseMenu!=null)
+            {
+                OpenClosePauseMenu();
+            }
         }
     }
     

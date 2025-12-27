@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CollisionDetection : MonoBehaviour
 {
-    [SerializeField] private GameObject explosion;
     
     private void OnCollisionEnter(Collision other)
     {
@@ -12,7 +11,7 @@ public class CollisionDetection : MonoBehaviour
         {
             GameManager.Instance.BombCollision(tag);
             ScoreManager.Instance.AddScore(500);
-            Instantiate(explosion, transform.position, Quaternion.identity, GameManager.Instance.gameObject.transform);
+            VfxManager.Instance.SpawnExplosion(gameObject);
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
