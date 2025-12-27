@@ -7,6 +7,8 @@ TagManager:
   - Bomb
   - Avion
   - Helicopter
+  - FxTemporaire
+  - Truck
   layers:
   - Default
   - TransparentFX

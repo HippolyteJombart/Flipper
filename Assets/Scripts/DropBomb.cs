@@ -8,14 +8,6 @@ public class DropBomb : MonoBehaviour
     [SerializeField] private GameObject bomb;
     [SerializeField] private float bombDelay;
 
-    private void Start()
-    {
-        if (attackers is Type.Truck || attackers is Type.Helicopter)
-        {
-            StartCoroutine(DropBombs());
-        }
-    }
-    
     private void OnEnable()
     {
         if (attackers is Type.Truck || attackers is Type.Helicopter)

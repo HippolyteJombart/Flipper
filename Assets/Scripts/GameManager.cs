@@ -7,8 +7,10 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] private GameObject[] avionList;
     [SerializeField] private GameObject[] helicopterList;
+    [SerializeField] private GameObject[] truckList;
     private int indiceAvion = 0;
     private int indiceHelicopter = 0;
+    private int indiceTruck = 0;
     
     public int cityLife = 6;
     
@@ -43,7 +45,6 @@ public class GameManager : MonoBehaviour
         cityLife --;
         if (cityLife <= 0)
         {
-            Time.timeScale = 0;
             MenuManager.Instance.OpenCloseDieMenu();
         }
         else
@@ -56,7 +57,7 @@ public class GameManager : MonoBehaviour
     {
         if (tag == "Avion")
         {
-            indiceAvion += 1;
+            indiceAvion++;
             if (indiceAvion < avionList.Length)
             {
                 avionList[indiceAvion].SetActive(true);
@@ -64,11 +65,20 @@ public class GameManager : MonoBehaviour
         }
         else if (tag == "Helicopter")
         {
-            indiceHelicopter += 1;
+            indiceHelicopter++;
             if (indiceHelicopter < helicopterList.Length)
             {
                 helicopterList[indiceHelicopter].SetActive(true);
             }
+        }
+        else if (tag == "Truck")
+        {
+            indiceTruck++;
+        }
+
+        if (indiceHelicopter == helicopterList.Length && indiceAvion == avionList.Length && indiceTruck == truckList.Length)
+        {
+            MenuManager.Instance.OpenCloseWinMenu();
         }
     }
 }

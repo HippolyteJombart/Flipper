@@ -6,9 +6,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private KeyCode menuKey = KeyCode.Escape;
     [SerializeField] private GameObject dieMenu;
-    
+    [SerializeField] private GameObject winMenu;
+
     
     public static MenuManager Instance;
+    
     private void Awake()
     {
         if (Instance == null)
@@ -23,8 +25,9 @@ public class MenuManager : MonoBehaviour
     
     private void Start()
     {
-        pauseMenu.SetActive(false);
-        dieMenu.SetActive(false);
+        if(pauseMenu!=null){ pauseMenu.SetActive(false);}
+        if(dieMenu!=null){ dieMenu.SetActive(false);}
+        if(winMenu!=null){ winMenu.SetActive(false);}
     }
     
     private void Update()
@@ -47,8 +50,6 @@ public class MenuManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
-
-
     
     public void OpenClosePauseMenu()
     {
@@ -79,6 +80,20 @@ public class MenuManager : MonoBehaviour
         
         dieMenu.SetActive(!dieMenu.activeSelf);
         if(dieMenu.activeSelf)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+    }
+    
+    public void OpenCloseWinMenu()
+    {
+        
+        winMenu.SetActive(!winMenu.activeSelf);
+        if(winMenu.activeSelf)
         {
             Time.timeScale = 0;
         }
