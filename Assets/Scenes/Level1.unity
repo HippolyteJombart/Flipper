@@ -2363,7 +2363,7 @@ GameObject:
   - component: {fileID: 558728031}
   - component: {fileID: 558728035}
   m_Layer: 0
-  m_Name: Bumper (6)
+  m_Name: Bumper (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2484,9 +2484,9 @@ Animation:
   m_GameObject: {fileID: 558728029}
   m_Enabled: 1
   serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: 5409510fc0c90eb49b921073ffc1ddf2, type: 2}
+  m_Animation: {fileID: 7400000, guid: 36904fd9e3544e54cb459afb5c7fac00, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 5409510fc0c90eb49b921073ffc1ddf2, type: 2}
+  - {fileID: 7400000, guid: 36904fd9e3544e54cb459afb5c7fac00, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -5057,7 +5057,7 @@ GameObject:
   - component: {fileID: 1181840827}
   - component: {fileID: 1181840832}
   m_Layer: 0
-  m_Name: Bumper (3)
+  m_Name: Bumper (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5163,7 +5163,7 @@ Transform:
   m_GameObject: {fileID: 1181840826}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.227, y: -0.241, z: -0}
+  m_LocalPosition: {x: 1.227, y: -0.241, z: 0}
   m_LocalScale: {x: 0.25, y: 0.15, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5178,9 +5178,9 @@ Animation:
   m_GameObject: {fileID: 1181840826}
   m_Enabled: 1
   serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: 5409510fc0c90eb49b921073ffc1ddf2, type: 2}
+  m_Animation: {fileID: 7400000, guid: 512c3357b866f804daf346563135c109, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 5409510fc0c90eb49b921073ffc1ddf2, type: 2}
+  - {fileID: 7400000, guid: 512c3357b866f804daf346563135c109, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -5735,7 +5735,7 @@ GameObject:
   - component: {fileID: 1460412876}
   - component: {fileID: 1460412881}
   m_Layer: 0
-  m_Name: Bumper (5)
+  m_Name: Bumper (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5856,9 +5856,9 @@ Animation:
   m_GameObject: {fileID: 1460412875}
   m_Enabled: 1
   serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: 5409510fc0c90eb49b921073ffc1ddf2, type: 2}
+  m_Animation: {fileID: 7400000, guid: 4e359a04342f7fc43af6c85ef84837df, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 5409510fc0c90eb49b921073ffc1ddf2, type: 2}
+  - {fileID: 7400000, guid: 4e359a04342f7fc43af6c85ef84837df, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -6228,9 +6228,9 @@ Animation:
   m_GameObject: {fileID: 1518153651}
   m_Enabled: 1
   serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: 5409510fc0c90eb49b921073ffc1ddf2, type: 2}
+  m_Animation: {fileID: 7400000, guid: a395b2f823a2db44aa0d2bdcaf4803b5, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 5409510fc0c90eb49b921073ffc1ddf2, type: 2}
+  - {fileID: 7400000, guid: a395b2f823a2db44aa0d2bdcaf4803b5, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
