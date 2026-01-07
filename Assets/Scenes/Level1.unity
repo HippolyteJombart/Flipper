@@ -2488,7 +2488,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 36904fd9e3544e54cb459afb5c7fac00, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
@@ -5182,7 +5182,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 512c3357b866f804daf346563135c109, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
@@ -5860,7 +5860,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 4e359a04342f7fc43af6c85ef84837df, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
@@ -6232,7 +6232,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: a395b2f823a2db44aa0d2bdcaf4803b5, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0

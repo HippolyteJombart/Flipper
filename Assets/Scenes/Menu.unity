@@ -291,7 +291,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95808416
 MonoBehaviour:
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sauver la ville
+  m_text: "D\xE9fendre la ville"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b91a83ff928243343b38f10e64bcae34, type: 2}
   m_sharedMaterial: {fileID: -2803865370517862191, guid: b91a83ff928243343b38f10e64bcae34, type: 2}
@@ -769,6 +769,8 @@ MonoBehaviour:
   menuKey: 27
   dieMenu: {fileID: 0}
   winMenu: {fileID: 0}
+  victoryText: {fileID: 0}
+  looserText: {fileID: 0}
 --- !u!4 &1025784499
 Transform:
   m_ObjectHideFlags: 0
@@ -1095,7 +1097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1939 - 1945
+  m_text: Save the city
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b91a83ff928243343b38f10e64bcae34, type: 2}
   m_sharedMaterial: {fileID: -2803865370517862191, guid: b91a83ff928243343b38f10e64bcae34, type: 2}
