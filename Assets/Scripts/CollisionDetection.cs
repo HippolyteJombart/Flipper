@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollisionDetection : MonoBehaviour
 {
+    [SerializeField] private Animation anim;
     
     private void OnCollisionEnter(Collision other)
     {
@@ -14,6 +15,7 @@ public class CollisionDetection : MonoBehaviour
             VfxManager.Instance.SpawnExplosion(gameObject);
             Destroy(other.gameObject);
             Destroy(gameObject);
+            anim.Play();
         }
     }
 }

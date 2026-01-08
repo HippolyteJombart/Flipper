@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    
+
     [SerializeField] private GameObject[] avionList;
     [SerializeField] private GameObject[] helicopterList;
     [SerializeField] private GameObject[] truckList;
